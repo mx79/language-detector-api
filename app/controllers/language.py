@@ -7,4 +7,4 @@ def get_language(sentence: str) -> Dict[str, Any]:
     :param sentence: The given sentence
     :return: Res dict
     """
-    return {}
+    return {"language": ""}
