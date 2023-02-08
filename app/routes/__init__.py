@@ -2,11 +2,6 @@ from functools import wraps
 from hmac import compare_digest
 from fastapi import HTTPException
 from config import Config
-from pydantic import BaseModel
-
-
-class Sentence(BaseModel):
-    text: str
 
 
 def auth_required(func):
