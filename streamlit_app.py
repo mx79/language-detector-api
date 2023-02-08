@@ -6,13 +6,13 @@ from audio_recorder_streamlit import audio_recorder
 
 def post_to_language_detection_api(audio: bytes):
     return requests.post(
-        url="http://localhost:5000/v1/language",
+        url="http://localhost:8000/v1/language",
         headers={
             "Content-Type": "application/json",
             "X-API-KEY": "08e869be-8f84-450c-a775-954c91c0581a"
         },
         data={
-            "file": open(audio)
+            "file": audio
         },
     )
 
